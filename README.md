@@ -1,14 +1,19 @@
 # Requirements
 
 * ruby
+* sh
 
 # Usage
 
-     ruby ./yaml_grep.rb <yaml_path> <file_path>
+Set your YAML_GREP_HOME environment variable appropriately.  Add $YAML_GREP_HOME/bin to your $PATH.
+Then:
 
-where <yaml_path> is a path in dot notation (i.e., "en.foo.bar") to a node in the YAML file.  e.g.:
+    yamlgrep <yaml_path> <directory_path>
 
-    ruby ./yaml_grep.rb en.foo.bar my_yaml_file.yml
+where <yaml_path> is a path in dot notation (i.e., "en.foo.bar") to a node any YAML file underneath
+<directory_path> e.g.:
+
+    yamlgrep en.foo.bar config/locales
 
 # License
 
